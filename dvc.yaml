@@ -49,6 +49,6 @@ stages:
     outs:
       - data/predictions.csv
     metrics:
-       - metrics/scores.json:  # Notez les deux-points et l'indentation
+       - metrics/scores.json: 
           type: json
           cache: false
