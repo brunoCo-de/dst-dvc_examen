@@ -47,5 +47,8 @@ stages:
       - data/processed/X_test_scaled.csv
       - data/processed/y_test.csv
     outs:
-      - metrics/scores.json
       - data/predictions.csv
+    metrics:
+       - metrics/scores.json:  # Notez les deux-points et l'indentation
+          type: json
+          cache: false
